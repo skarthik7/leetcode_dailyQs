@@ -1,8 +1,11 @@
 class Solution:
-    def appendCharacters(self, s: str, t: str) -> int:
-        i, j = 0, 0
-        while i < len(s) and j < len(t):
-            if s[i] == t[j]:
-                j += 1
-            i += 1
-        return j
+    def minCharacters(self, s: str, t: str) -> int:
+        i = j = 0
+        appended = 0
+        while j < len(t):
+            if i < len(s) and s[i] == t[j]:
+                i += 1
+            else:
+                appended += 1
+            j += 1
+        return appended
