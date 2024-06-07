@@ -12,3 +12,6 @@ class Solution:
                     return False
                 freq[card + i] -= 1
         return True
+
+# Time complexity: O(N * log(N)) where N is the length of the hand
+# Space complexity: O(N) where N is the length of the hand
