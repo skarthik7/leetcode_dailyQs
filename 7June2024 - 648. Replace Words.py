@@ -9,3 +9,6 @@ class Solution:
             return word
 
         return ' '.join(map(replace, sentence.split()))
+    
+# Time complexity: O(N * M) where N is the length of the sentence and M is the length of the longest word in the dictionary
+# Space complexity: O(N) where N is the length of the sentence
