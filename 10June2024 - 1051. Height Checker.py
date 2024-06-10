@@ -6,3 +6,6 @@ class Solution:
             if heights[i] != expected[i]:
                 out += 1
         return out
+    
+    # Time complexity: O(nlogn)
+    # Space complexity: O(n)
