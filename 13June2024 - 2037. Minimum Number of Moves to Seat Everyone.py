@@ -3,3 +3,4 @@ class Solution:
         seats.sort()
         students.sort()
         return sum(abs(seat - student) for seat, student in zip(seats, students))
+# Time: O(nlogn) because of sorting
