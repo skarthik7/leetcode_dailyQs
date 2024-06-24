@@ -12,3 +12,5 @@ class Solution:
                 flips += 1
                 flipQueue.append(i + k)
         return flips
+    
+# Time complexity: O(n)
