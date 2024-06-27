@@ -7,3 +7,4 @@ class Solution:
             return edges[0][1]
 
 # Time complexity: O(1)
+# Space complexity: O(1)
