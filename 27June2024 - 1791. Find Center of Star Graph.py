@@ -5,3 +5,5 @@ class Solution:
             return edges[0][0]
         else:
             return edges[0][1]
+
+# Time complexity: O(1)
