@@ -25,3 +25,5 @@ class Solution:
             total_importance += importance[a] + importance[b]
         
         return total_importance
+
+# Time complexity: O(nlogn)
