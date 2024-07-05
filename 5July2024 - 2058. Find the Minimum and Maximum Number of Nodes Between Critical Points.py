@@ -30,3 +30,5 @@ class Solution:
         max_dist = last_cp - first_cp
         min_dist = min_dist if min_dist != float('inf') else -1
         return [min_dist, max_dist]
+    
+# Time complexity: O(N)
