@@ -11,5 +11,7 @@ class Solution:
                 continue
             else:
                 depth += 1
-                
+
         return depth
+
+# Time complexity: O(N) as we iterate through the logs once where N is the number of logs in the list.
