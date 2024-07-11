@@ -12,3 +12,5 @@ class Solution:
             else:
                 stack.append(char)
         return ''.join(stack)
+    
+# Time complexity: O(N) as we iterate through the string once where N is the length of the string.
