@@ -21,3 +21,5 @@ class Solution:
         _, additional_score = remove_substring_and_calculate_points(modified_s, second, second_points)
         
         return score + additional_score
+    
+# Time complexity: O(N) as we iterate through the string once where N is the length of the string.
