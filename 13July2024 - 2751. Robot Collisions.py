@@ -1,32 +1,28 @@
+from collections import deque
+
 class Solution:
-    def survivedRobotsHealths(positions, healths, directions):
-        robots = sorted([(positions[i], healths[i], directions[i]) for i in range(len(positions))])
-        
-        right_moving = []
-        survivors = [] 
-        
-        for pos, health, direction in robots:
-            if direction == 'L':
-                while right_moving and health > 0:
-                    _, r_health = right_moving[-1]
-                    if health > r_health:
-                        health -= 1
-                        right_moving.pop()
-                    elif health < r_health:
-                        right_moving[-1][1] -= 1
-                        health = 0
-                    else:
-                        right_moving.pop()
-                        health = 0
-                if health > 0:
-                    survivors.append((pos, health, direction))
-            else:
-                right_moving.append([pos, health])
-        
-        for pos, health in right_moving:
-            survivors.append((pos, health, 'R'))
-        
-        survivors.sort(key=lambda x: positions.index(x[0]))
-        
-        return [health for _, health, _ in survivors]
-        
+    def survivedRobotsHealths(self, positions, healths, directions):
+        robots = list(zip(positions, healths, directions, range(len(positions))))
+        robots.sort()  # Sort based on positions
+        stack = []
+
+        for pos, health, direction, idx in robots:
+            if direction == 'R':
+                stack.append((pos, health, direction, idx))
+            else:  # direction == 'L'
+                while stack and stack[-1][2] == 'R' and stack[-1][1] < health:
+                    _, h, _, i = stack.pop()
+                    health -= 1
+                if stack and stack[-1][2] == 'R' and stack[-1][1] == health:
+                    stack.pop()
+                elif stack and stack[-1][2] == 'R' and stack[-1][1] > health:
+                    pos_r, health_r, direction_r, idx_r = stack.pop()
+                    stack.append((pos_r, health_r - 1, direction_r, idx_r))
+                else:
+                    stack.append((pos, health, direction, idx))
+
+        result = [-1] * len(positions)
+        for pos, health, direction, idx in stack:
+            result[idx] = health
+
+        return [h for h in result if h != -1]
