@@ -26,3 +26,4 @@ class Solution:
             result[idx] = health
 
         return [h for h in result if h != -1]
+# Time complexity: O(N) as we iterate through the robots once where N is the number of robots.
