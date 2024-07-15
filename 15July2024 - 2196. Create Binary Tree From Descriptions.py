@@ -6,4 +6,21 @@
 #         self.right = right
 class Solution:
     def createBinaryTree(self, descriptions: List[List[int]]) -> Optional[TreeNode]:
-        pass
+        nodeMap = {}
+        childSet = set()
+
+        for parent, child, _ in descriptions:
+            if parent not in nodeMap:
+                nodeMap[parent] = TreeNode(parent)
+            if child not in nodeMap:
+                nodeMap[child] = TreeNode(child)
+            childSet.add(child)
+
+        for parent, child, isLeft in descriptions:
+            if isLeft:
+                nodeMap[parent].left = nodeMap[child]
+            else:
+                nodeMap[parent].right = nodeMap[child]
+
+        rootVal = (set(nodeMap.keys()) - childSet).pop()  # The root is not a child
+        return nodeMap[rootVal]
