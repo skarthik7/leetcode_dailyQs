@@ -8,7 +8,6 @@ class Solution:
     def createBinaryTree(self, descriptions: List[List[int]]) -> Optional[TreeNode]:
         nodeMap = {}
         childSet = set()
-
         for parent, child, _ in descriptions:
             if parent not in nodeMap:
                 nodeMap[parent] = TreeNode(parent)
@@ -24,3 +23,4 @@ class Solution:
 
         rootVal = (set(nodeMap.keys()) - childSet).pop()  # The root is not a child
         return nodeMap[rootVal]
+# Time Complexity: O(N) where N is the number of nodes in the binary tree.
