@@ -21,3 +21,5 @@ class Solution:
 
         dfs(root, True)
         return forest
+    
+# Time Complexity: O(N) where N is the number of nodes in the binary tree.
