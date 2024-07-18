@@ -34,3 +34,5 @@ class Solution:
         
         dfs(root)
         return self.good_pairs
+    
+# Time Complexity: O(N) where N is the number of nodes in the binary tree.
