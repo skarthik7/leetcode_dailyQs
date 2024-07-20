@@ -12,3 +12,5 @@ class Solution:
 
         lucky_numbers = row_min_set.intersection(col_max_set)
         return lucky_numbers
+
+# Time Complexity: O(N*M) where N is the number of rows and M is the number of columns in the matrix.
