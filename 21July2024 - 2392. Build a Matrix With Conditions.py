@@ -35,3 +35,4 @@ class Solution:
             matrix[i][position[num]] = num
         
         return matrix
+# Time Complexity: O(N + M) where N is the number of rows and M is the number of columns in the matrix.
