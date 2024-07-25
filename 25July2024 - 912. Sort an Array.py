@@ -27,4 +27,6 @@ class Solution:
         right_half = self.sortArray(nums[mid:])
         
         return merge(left_half, right_half)
-        
+
+
+# Time complexity: O(nlogn) - Merge sort - as required..
