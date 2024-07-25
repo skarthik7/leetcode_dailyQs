@@ -12,3 +12,5 @@ class Solution:
         
         sorted_nums = [num for _, num in mapped_nums]
         return sorted_nums
+    
+# Time complexity: O(nlogn)
