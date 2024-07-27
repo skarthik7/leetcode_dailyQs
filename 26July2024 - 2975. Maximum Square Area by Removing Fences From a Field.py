@@ -24,3 +24,5 @@ class Solution:
         modulo = 10**9 + 7
         max_sq = max(test)
         return max_sq ** 2 % modulo
+
+# Time complexity: O(m + n)
