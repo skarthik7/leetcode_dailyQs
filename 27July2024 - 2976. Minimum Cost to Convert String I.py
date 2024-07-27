@@ -37,3 +37,4 @@ class Solution:
         
         return total_cost
         
+# Time complexity: O(n^2 * logn) because of dijkstra
