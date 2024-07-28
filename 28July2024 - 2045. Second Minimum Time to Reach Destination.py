@@ -35,3 +35,6 @@ class Solution:
                     heapq.heappush(pq, (next_time, v, 1))
         
         return -1
+
+
+# Time Complexity: O(nlogn)
