@@ -1,3 +1,5 @@
+# Two solutions listed below, one with O(n^3) and the other with O(n^2) time complexity.
+
 class Solution:
     def numTeams(self, rating: List[int]) -> int:
         n = len(rating)
