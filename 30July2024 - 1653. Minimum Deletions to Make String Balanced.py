@@ -15,3 +15,4 @@ class Solution:
         return min_deletions
 
 # Time complexity: O(n) because we iterate through the string once.
+# Space complexity: O(1) because we use constant space.
