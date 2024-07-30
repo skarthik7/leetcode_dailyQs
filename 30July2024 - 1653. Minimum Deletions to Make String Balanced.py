@@ -14,3 +14,4 @@ class Solution:
         
         return min_deletions
 
+# Time complexity: O(n) because we iterate through the string once.
