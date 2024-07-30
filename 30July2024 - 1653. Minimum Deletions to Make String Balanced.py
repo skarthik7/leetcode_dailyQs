@@ -1,7 +1,7 @@
 class Solution:
     def minimumDeletions(self, s: str) -> int:
         count_a = s.count('a')
-        min_deletions = float('inf')
+        min_deletions = count_a
         count_b = 0
         
         for char in s:
