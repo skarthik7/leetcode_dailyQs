@@ -6,3 +6,5 @@ class Solution:
             if age > 60:
                 count+=1
         return count
+
+# Time complexity: O(n) because we iterate through the list of details once.
