@@ -15,3 +15,5 @@ class Solution:
                 dp[i] = min(dp[i], dp[j - 1] + max_height)
         
         return dp[n]
+
+# Time complexity: O(n^2) because we iterate through the books list twice.
