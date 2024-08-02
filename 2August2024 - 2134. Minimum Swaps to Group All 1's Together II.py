@@ -18,3 +18,5 @@ class Solution:
             max_ones_in_window = max(max_ones_in_window, current_ones_in_window)
         
         return total_ones - max_ones_in_window
+
+# Time complexity: O(n) because we iterate through the extended_nums list once.
