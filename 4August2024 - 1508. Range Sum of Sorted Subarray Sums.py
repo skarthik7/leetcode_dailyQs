@@ -14,3 +14,5 @@ class Solution:
         result = sum(subarray_sums[left-1:right]) % MOD
         
         return result
+
+# Time complexity: O(n^2logn) because we iterate through the nums list once and sort the subarray_sums list.
