@@ -1,5 +1,5 @@
 
-# Two solutions listed below; one is naive and the other is optimized.
+# Two solutions listed below; one is naive - O(n^2) and the other is optimized - O(n).
 
 class Solution:
     def kthDistinct(self, arr: List[str], k: int) -> str:
