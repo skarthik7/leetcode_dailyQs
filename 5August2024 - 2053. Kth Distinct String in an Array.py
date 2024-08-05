@@ -8,3 +8,5 @@ class Solution:
             if len(unique) >= k:
                 return unique[k-1]
         return ""
+
+# Time complexity: O(n^2) because we iterate through the arr list and count the number of occurrences of each element in the arr list.
