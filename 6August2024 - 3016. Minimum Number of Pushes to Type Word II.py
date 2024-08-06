@@ -8,3 +8,5 @@ class Solution:
         for i, count in enumerate(countsSorted):
             res += (i // 8 + 1) * count
         return res
+
+# Time complexity: O(n) because we iterate through the word string once.
