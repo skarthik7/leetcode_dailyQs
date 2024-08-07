@@ -24,3 +24,4 @@ class Solution:
             num //= 1000
         
         return result.strip()
+# Time complexity: O(1) because the number of digits in the input number is limited (constraint).
