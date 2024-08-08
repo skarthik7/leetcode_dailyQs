@@ -19,3 +19,5 @@ class Solution:
                     steps += 1
         
         return output
+    
+# Time complexity: O(max(rows, cols)^2)
