@@ -29,4 +29,5 @@ class Solution:
                 #print(matrix)
         return count
     
-# Time complexity: O(m*n)
+# Time complexity: O(m*n) as we iterate through the grid of size m*n
+# Space complexity: O(1) 
