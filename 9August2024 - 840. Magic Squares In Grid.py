@@ -28,3 +28,5 @@ class Solution:
                     count += 1
                 #print(matrix)
         return count
+    
+# Time complexity: O(m*n)
