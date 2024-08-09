@@ -30,4 +30,4 @@ class Solution:
         return count
     
 # Time complexity: O(m*n) as we iterate through the grid of size m*n
-# Space complexity: O(1) 
+# Space complexity: O(1) as we use constant space
