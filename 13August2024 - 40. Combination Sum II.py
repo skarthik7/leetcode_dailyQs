@@ -24,3 +24,5 @@ class Solution:
 
         backtrack([],0,target)
         return output
+    
+# Time complexity: O(2^n)
