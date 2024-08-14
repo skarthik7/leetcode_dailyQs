@@ -20,3 +20,4 @@ class Solution:
                 right = mid
 
         return left
+# Time complexity: O(nlogn) as we are sorting the array.
