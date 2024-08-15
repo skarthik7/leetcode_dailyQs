@@ -13,6 +13,7 @@ class Solution:
                 else:
                     currentFives-=1
             elif bill == 20:
+                currentTwenties += 1
                 if currentFives > 0 and currentTens > 0:
                     currentFives -= 1
                     currentTens -= 1
