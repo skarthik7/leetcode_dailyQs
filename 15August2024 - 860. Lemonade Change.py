@@ -21,3 +21,6 @@ class Solution:
                 else:
                     return False
         return True
+
+
+# Time complexity: O(n) as we are iterating through the bills array once.
