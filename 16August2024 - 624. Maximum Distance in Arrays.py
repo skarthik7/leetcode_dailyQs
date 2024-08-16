@@ -12,3 +12,5 @@ class Solution:
 
 
         return max_distance
+ 
+# Time complexity: O(n) as we are iterating through the array (varible = arrays) once.
