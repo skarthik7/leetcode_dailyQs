@@ -19,3 +19,5 @@ class Solution:
                 dp[c] = points[r][c] + max(left[c], right[c])
 
         return max(dp)
+
+# Time complexity: O(m*n)
