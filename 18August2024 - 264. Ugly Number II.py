@@ -22,3 +22,5 @@ class Solution:
                 next_multiple_of_5 = ugly_numbers[i5] * 5
 
         return ugly_numbers[-1]
+    
+# Time complexity: O(n)
