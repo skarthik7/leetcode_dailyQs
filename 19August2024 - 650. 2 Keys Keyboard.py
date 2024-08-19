@@ -12,3 +12,5 @@ class Solution:
                     dp[i] = min(dp[i], dp[j] + (i // j))
         
         return dp[n]
+
+# Time complexity: O(n^2)
