@@ -23,3 +23,4 @@ class Solution:
             return max_stones
             
         return dp(0, 1)
+# Time complexity: O(n^2)
