@@ -24,3 +24,5 @@ class Solution:
         denominator //= common_divisor
         
         return f"{numerator}/{denominator}"
+    
+# Time complexity: O(n)
