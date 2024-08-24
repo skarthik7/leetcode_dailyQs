@@ -28,3 +28,5 @@ class Solution:
         closest_palindrome = min(candidates, key=lambda x: (abs(x - num), x))
         
         return str(closest_palindrome)
+    
+# Time complexity: O(1)
