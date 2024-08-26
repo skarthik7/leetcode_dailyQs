@@ -21,3 +21,4 @@ class Solution:
         
         return output[::-1]
 # Time complexity: O(n)
+# Iterative solution
