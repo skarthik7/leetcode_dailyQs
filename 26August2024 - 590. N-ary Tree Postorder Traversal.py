@@ -20,3 +20,4 @@ class Solution:
                 stack.append(child)
         
         return output[::-1]
+# Time complexity: O(n)
