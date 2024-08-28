@@ -19,3 +19,5 @@ class Solution:
                         sub_islands_count += 1
         
         return sub_islands_count
+    
+# Time complexity: O(m * n)
