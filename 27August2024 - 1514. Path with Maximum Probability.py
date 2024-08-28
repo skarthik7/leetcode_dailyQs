@@ -5,6 +5,8 @@ class Solution:
         for (a, b), prob in zip(edges, succProb):
             graph[a].append((b, prob))
             graph[b].append((a, prob))
+
+
         
         # Step 2: Initialize the max-heap and probabilities
         max_heap = [(-1.0, start_node)]  # Use negative probabilities for max-heap
@@ -26,4 +28,7 @@ class Solution:
                     heapq.heappush(max_heap, (-new_prob, neighbor))
         
         return 0.0
+
+
+
 # Time complexity: O(n log n)
