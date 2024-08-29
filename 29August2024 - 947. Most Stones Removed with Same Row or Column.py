@@ -22,3 +22,5 @@ class Solution:
         
         unique_roots = len({find(x) for x in parent})
         return len(stones) - unique_roots
+    
+# Time complexity: O(n * log n)
