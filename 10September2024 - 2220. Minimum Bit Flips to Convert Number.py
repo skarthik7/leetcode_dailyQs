@@ -10,3 +10,5 @@ class Solution:
             xor_result >>= 1
         
         return count
+
+# time complexity: O(n)
