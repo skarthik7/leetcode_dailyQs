@@ -7,3 +7,4 @@ class Solution:
                     out_opp += 1
                     break
         return len(words)-out_opp
+# time complexity: O(n*m)
