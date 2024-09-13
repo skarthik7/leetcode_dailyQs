@@ -10,3 +10,5 @@ class Solution:
             result.append(prefix[right + 1] ^ prefix[left])
         
         return result
+    
+# Time complexity: O(n + m)
