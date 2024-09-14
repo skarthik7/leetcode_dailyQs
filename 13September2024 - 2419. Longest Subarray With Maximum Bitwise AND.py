@@ -12,3 +12,5 @@ class Solution:
             else:
                 current_length = 0
         return longest
+    
+# Time complexity: O(n)
