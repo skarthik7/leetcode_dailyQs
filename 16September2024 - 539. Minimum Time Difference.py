@@ -19,3 +19,5 @@ class Solution:
         min_diff = min(min_diff, circular_diff)
         
         return min_diff
+    
+# Time complexity: O(nlogn)
