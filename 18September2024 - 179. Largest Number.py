@@ -5,3 +5,4 @@ class Solution:
         if nums_str[0] == '0':
             return '0'
         return ''.join(nums_str)
+ # Time complexity: O(nlogn)
