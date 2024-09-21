@@ -15,4 +15,7 @@ class Solution:
         for i in range(1, 10):
             dfs(i)
         
-        return result
+        return 
+    
+
+# time complexity: O(n)
