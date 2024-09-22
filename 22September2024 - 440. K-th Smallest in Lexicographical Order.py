@@ -23,3 +23,4 @@ class Solution:
                 k -= 1
         
         return current
+# time complexity: O(log(n))
