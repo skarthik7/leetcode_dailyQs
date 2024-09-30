@@ -22,3 +22,5 @@ class CustomStack:
 # obj.push(x)
 # param_2 = obj.pop()
 # obj.increment(k, val)
+
+# Time complexity: O(1) for all operations
