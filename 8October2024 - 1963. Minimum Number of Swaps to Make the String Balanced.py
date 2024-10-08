@@ -13,3 +13,4 @@ class Solution:
                 max_unbalanced = max(max_unbalanced, -balance)
         
         return (max_unbalanced + 1) // 2
+# Time complexity: O(N)
