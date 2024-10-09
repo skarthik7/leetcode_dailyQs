@@ -12,3 +12,5 @@ class Solution:
                     right_balance += 1
         
         return left_balance + right_balance
+
+# Time complexity: O(N)
