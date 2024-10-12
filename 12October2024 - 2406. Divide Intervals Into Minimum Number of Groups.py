@@ -17,3 +17,5 @@ class Solution:
             max_groups = max(max_groups, current_groups)
         
         return max_groups
+    
+# Time complexity: O(nlogn) where n is the number of intervals
