@@ -28,3 +28,5 @@ class Solution:
                     heapq.heappush(max_heap, (count1, char1))
         
         return ''.join(result)
+
+# Time complexity: O(nlogn) where n is the number of characters in the result
