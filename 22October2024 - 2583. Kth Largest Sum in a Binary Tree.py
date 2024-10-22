@@ -30,3 +30,5 @@ class Solution:
             return -1
         
         return level_sums[k - 1]
+    
+# Runtime 47 ms Beats 100.00%
