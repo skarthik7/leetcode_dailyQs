@@ -19,3 +19,4 @@ class Solution:
         return without_flip or with_flip
     
 # The time complexity of the flipEquiv function is O(n), where n is the total number of nodes in the larger of the two binary trees (root1 and root2).
+# The space complexity is O(h), where h is the height of the tree. 
