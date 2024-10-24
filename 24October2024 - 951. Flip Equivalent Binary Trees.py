@@ -17,3 +17,5 @@ class Solution:
         with_flip = self.flipEquiv(root1.left, root2.right) and self.flipEquiv(root1.right, root2.left)
         
         return without_flip or with_flip
+    
+# The time complexity of the flipEquiv function is O(n), where n is the total number of nodes in the larger of the two binary trees (root1 and root2).
