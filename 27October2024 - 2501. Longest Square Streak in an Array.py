@@ -22,3 +22,5 @@ class Solution:
                 max_streak = max(max_streak, streak)
 
         return max_streak
+    
+# O(n)
