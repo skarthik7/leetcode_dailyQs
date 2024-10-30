@@ -20,3 +20,4 @@ class Solution:
                 max_mountain_len = max(max_mountain_len, lis[i] + lds[i] - 1)
         
         return n - max_mountain_len
+# O(n^2)
