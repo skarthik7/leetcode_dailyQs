@@ -21,3 +21,4 @@ class Solution:
                     total_distance += abs(robot[i - k] - factory_position)
                     dp[i][j] = min(dp[i][j], dp[i - k][j - 1] + total_distance)
         return dp[m][n]
+# O(M∗N)
