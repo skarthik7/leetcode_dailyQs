@@ -8,3 +8,5 @@ class Solution:
             result.append(char)
         
         return ''.join(result)
+# Time complexity: O(n) 
+# where n is the number of characters in the string
