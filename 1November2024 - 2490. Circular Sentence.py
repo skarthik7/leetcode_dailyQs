@@ -9,3 +9,4 @@ class Solution:
         return True
     
 # Time complexity: O(n)
+# 100%
