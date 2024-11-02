@@ -7,3 +7,5 @@ class Solution:
         if words[-1][-1] != words[0][0]:
             return False
         return True
+    
+# Time complexity: O(n)
