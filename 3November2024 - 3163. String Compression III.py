@@ -7,3 +7,4 @@ class Solution:
             comp += str(prefix_length) + c
             word = word[prefix_length:]
         return comp
+# O(n)
