@@ -27,4 +27,4 @@ class Solution:
         nums[start:end+1] = sorted(nums[start:end+1])
 
         return self.checkSorted(nums)
-        
+# O(n) time and space complexity
