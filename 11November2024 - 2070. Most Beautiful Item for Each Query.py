@@ -29,3 +29,4 @@ class Solution:
             
             return max_beauty[result] if result != -1 else 0
         return [binary_search(q) for q in queries]
+# time complexity: O(n log n) for sorting + O(m log n) for binary search = O((n+m) log n)
