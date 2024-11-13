@@ -30,3 +30,5 @@ class Solution:
             if left <= right:
                 count += right - left + 1  
         return count
+
+# time complexity: O(n log n) for sorting + O(n log n) for binary search = O(n log n)
