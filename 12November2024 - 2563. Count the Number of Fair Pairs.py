@@ -24,12 +24,9 @@ class Solution:
         count = 0
         
         for i in range(len(nums)):
-            # Find left boundary where nums[i] + nums[j] >= lower
             left = binary_search_left(lower - nums[i], i + 1)
-            # Find right boundary where nums[i] + nums[j] <= upper
             right = binary_search_right(upper - nums[i], i + 1)
             
             if left <= right:
-                count += right - left + 1
-                
+                count += right - left + 1  
         return count
