@@ -1,19 +1,35 @@
 class Solution:
     def countFairPairs(self, nums: List[int], lower: int, upper: int) -> int:
-        nums.sort() 
-        count = 0
-        n = len(nums)
+        def binary_search_left(target, start):
+            left, right = start, len(nums) - 1
+            while left <= right:
+                mid = (left + right) // 2
+                if nums[mid] < target:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+            return left
+            
+        def binary_search_right(target, start):
+            left, right = start, len(nums) - 1
+            while left <= right:
+                mid = (left + right) // 2
+                if nums[mid] <= target:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+            return right
         
-        for i in range(n):
-            left = i + 1
-            while left < n and nums[i] + nums[left] < lower:
-                left += 1
-                
-            right = n - 1
-            while right > i and nums[i] + nums[right] > upper:
-                right -= 1
-                
-            if left <= right and right > i:
+        nums.sort()
+        count = 0
+        
+        for i in range(len(nums)):
+            # Find left boundary where nums[i] + nums[j] >= lower
+            left = binary_search_left(lower - nums[i], i + 1)
+            # Find right boundary where nums[i] + nums[j] <= upper
+            right = binary_search_right(upper - nums[i], i + 1)
+            
+            if left <= right:
                 count += right - left + 1
                 
         return count
