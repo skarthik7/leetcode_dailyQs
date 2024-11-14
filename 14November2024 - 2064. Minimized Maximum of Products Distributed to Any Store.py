@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/
+
 class Solution:
     def minimizedMaximum(self, n: int, quantities: List[int]) -> int:
     
