@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/find-the-power-of-k-size-subarrays-i/
 class Solution:
     def resultsArray(self, nums: List[int], k: int) -> List[int]:
         def isAscSorted(arr):
@@ -12,3 +13,4 @@ class Solution:
             else:
                 resArr.append(-1)
         return resArr
+
