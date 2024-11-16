@@ -14,3 +14,4 @@ class Solution:
                 resArr.append(-1)
         return resArr
 
+# time complexity: O(n*k)
