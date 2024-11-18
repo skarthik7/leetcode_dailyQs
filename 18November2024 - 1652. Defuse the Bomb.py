@@ -17,3 +17,5 @@ class Solution:
             return(code[n:])
         else:
             return [0]*n
+        
+# time complexity: O(n)
