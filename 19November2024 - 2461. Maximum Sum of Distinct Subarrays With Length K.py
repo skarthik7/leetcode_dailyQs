@@ -24,3 +24,5 @@ class Solution:
                 left += 1
         
         return max_sum
+    
+# time complexity: O(n)
