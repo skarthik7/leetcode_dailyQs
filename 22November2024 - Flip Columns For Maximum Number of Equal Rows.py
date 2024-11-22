@@ -10,3 +10,5 @@ class Solution:
             pattern_count[flipped_pattern] += 1
         
         return max(pattern_count.values())
+    
+# time complexity: O(n*m) where n -> rows and m -> columns
