@@ -35,3 +35,4 @@ class Solution:
                     queue.append((new_state, steps + 1))
         
         return -1
+# Time Complexity: O(N!)
