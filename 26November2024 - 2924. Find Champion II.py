@@ -13,3 +13,4 @@ class Solution:
                 champion = i
         
         return champion
+# Time Complexity: O(N)
