@@ -49,3 +49,5 @@ class Solution:
             total_swaps += minSwaps(level_values)
         
         return total_swaps
+    
+# Time complexity: O(nlogn) where n -> number of nodes in the binary tree
